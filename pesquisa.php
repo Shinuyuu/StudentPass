@@ -47,7 +47,7 @@
             <form class="searchBox" action="pesquisa.php" method="post">
                 <input class="logInput searched searchInput" type="search" name="search" id="search" autocomplete="on" required>
                 <button class="BotaoPesquisa"><input class="SearchIcon" type="image" src="SearchIcon.png" width="40" height="40" id="IconeP"></button>
-                <select class="selectList" id="filter" name="filter" style="height:40px" required>
+                <select class="selectList" id="filter" name="filter" style="height:35px" required>
                     <option value="" selected disabled>Nenhum</option>    
                     <option value="nm">Nome</option>
                     <option value="rm">RM</option>
@@ -108,8 +108,9 @@
                                 <div class="centered" style="width: 100%;">
                                 <div class="nm_aluno" id="nm_aluno">Nome: '.$row['nm_aluno'].'</div>
                                 <div class="rm_aluno" id="rm_aluno">RM: '.$row['rm_aluno'].'</div>
+                                <div class="rm_aluno" id="curso_aluno">Curso: '.$row['sg_turma'].'</div>
                             </div>
-                            <div class="curso_aluno" id="curso_aluno">Curso: '.$row['sg_turma'].'</div>
+                            <div class= "foto" style="width:50%;"><img style="width: 90%;height:90%;margin-left:45%;" src="perfil-removebg-preview.png" alt=""></div>
                             <div class="randomImg"></div>
                         </div>
                             <div class="innerSecondBox">
@@ -137,8 +138,9 @@
                                     <div class="centered" style="width: 100%;">
                                     <div class="nm_aluno" id="nm_aluno">Nome: '.$row2['nm_aluno'].'</div>
                                     <div class="rm_aluno" id="rm_aluno">RM: '.$row2['rm_aluno'].'</div>
+                                    <div class="rm_aluno" id="curso_aluno">Curso: '.$row2['sg_turma'].'</div>
                                 </div>
-                                <div class="curso_aluno" id="curso_aluno">Curso: '.$row2['sg_turma'].'</div>
+                                <div class= "foto" style="width:50%;"><img style="width: 90%;height:90%;margin-left:45%;" src="perfil-removebg-preview.png" alt=""></div>
                                 <div class="randomImg"></div>
                             </div>
                                 <div class="innerSecondBox">

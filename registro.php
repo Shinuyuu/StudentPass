@@ -36,6 +36,15 @@
         border: none;
 
         }
+        #foto{
+
+            width: -10px;
+            height:-10px;
+
+
+
+
+        }
     </style>
 </head>
 <body class="backDesign2">
@@ -88,8 +97,9 @@
                                 <div class="centered" style="width: 100%;">
                                 <div class="nm_aluno" id="nm_aluno">Nome: '.$row['nm_aluno'].'</div>
                                 <div class="rm_aluno" id="rm_aluno">RM: '.$row['rm_aluno'].'</div>
+                                <div class="rm_aluno" id="curso_aluno">Curso: '.$row['sg_turma'].'</div>
                             </div>
-                            <div class="curso_aluno" id="curso_aluno">Curso: '.$row['sg_turma'].'</div>
+                            <div class= "foto" style="width:50%;"><img style="width: 90%;height:90%;margin-left:45%;" src="perfil-removebg-preview.png" alt=""></div>
                             <div class="randomImg"></div>
                         </div>
                             <div class="innerSecondBox">
@@ -117,8 +127,9 @@
                                     <div class="centered" style="width: 100%;">
                                     <div class="nm_aluno" id="nm_aluno">Nome: '.$row2['nm_aluno'].'</div>
                                     <div class="rm_aluno" id="rm_aluno">RM: '.$row2['rm_aluno'].'</div>
+                                    <div class="rm_aluno" id="curso_aluno">Curso: '.$row2['sg_turma'].'</div>
                                 </div>
-                                <div class="curso_aluno" id="curso_aluno">Curso: '.$row2['sg_turma'].'</div>
+                                <div class= "foto" style="width:50%;"><img style="width: 90%;height:90%;margin-left:45%;" src="perfil-removebg-preview.png" alt=""></div>
                                 <div class="randomImg"></div>
                             </div>
                                 <div class="innerSecondBox">
@@ -136,11 +147,12 @@
                     </div>';
                 }
                 else{
-                    echo '<div class="entrance" id="entrance">
+                    echo '<div class="entrance" id="entrance"> 
                         <div class="centered titleLabel">Entrada</div>
                         <div id="entranceGroup">
                         </div>
                     </div>';
+
 
                     echo '<div class="exit" id="exit">
                         <div class="centered titleLabel">Saída</div>
