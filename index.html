@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="login.js"></script>
+    <title>Login-StudentPass</title>
+  </head>
+
+  <body>
+    <div class="conteudo">
+      <div class="imagem">
+        <img src="StudenPass.png" alt="" />
+      </div>
+
+      <div class="form">
+        <form action="login.php" method="POST">
+          <div class="cabecalho">
+            <div class="titulo">
+              <h1>Login</h1>
+            </div>
+          </div>
+
+          <div class="grupo_input">
+            <div class="input_box">
+              <label for="campo_email">Email</label>
+              <input
+                type="email"
+                placeholder="Digite o seu email"
+                name="email"
+                id="login"
+                required
+              />
+            </div>
+
+            <br />
+            <br />
+
+            <div class="input_box">
+              <label for="campo_senha">Senha</label>
+              <input type="password" placeholder="Digite a sua senha" name="senha" id="campo_senha" required>
+              <i id="btn-senha" class="bi bi-eye-fill" onclick="mostrarSenha()"></i>
+            </div>
+
+            <br />
+            <br />
+
+            <div class="grupo_botao">
+              <button class="botao" type="submit">Enviar</button>
+            </div>
+            <div class="link-cadastro">
+              <p>Não possui um login?<a id="Cadastre-se" href="cadastro.html"> Cadastre-se</a></p>
+            </div>
+            
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: rgb(255, 255, 255);
+    font-family: "Nunito Sans", sans-serif;
+}
+.imagemSP{
+    margin-left: 50px;
+    width: 100px;
+    display: flex;
+    margin-left: 100%;
+}
+.realBody{
+    background-image: linear-gradient(145deg, rgb(68, 122, 202), rgb(6, 6, 139));
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    width: 75%;
+    height: 100%;
+}
+.fakeBody{
+    background: linear-gradient(145deg, rgb(68, 122, 202), rgb(6, 6, 139)); 
+    position:fixed;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1000;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#logo{
+    position: absolute; 
+    background-color: white;
+    border-radius: 15%;
+    height: 100;
+    width:10%;
+    justify-content: left;
+    align-self: start;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.collumnForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.titleLabel{
+    font-size: xx-large;
+    font-weight: bolder;
+    margin: 0% 0% 5% 0%;
+}
+
+.centered{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rowFlex{
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+}
+
+.entrance{
+    background-color: rgb(91, 187, 190);
+    border-radius: 8px;
+    box-shadow: rgb(91, 187, 190) 0px 0px 0px 15px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgb(0, 0, 0) 10px 10px 20px 2px;
+    width: 20%;
+    height: 100%;
+    margin: 2% 2.5% 35% 2.5%;
+    /*transition: background-color:all 0.5s ease, color 0.5s ease, transform:all 0.5s ease;
+    */
+}
+
+.exit{
+    background-color: rgb(245, 63, 0);
+    box-shadow: rgb(245, 63, 0) 0px 0px 0px 15px;
+    padding: 10px;
+    box-shadow: rgb(0, 0, 0) 10px 10px 20px 2px;
+    border-radius: 10px;
+    width: 20%;
+    height: 100%;
+    border-radius: 8px;
+    /* display: flex; */
+    /*ANTES O DISPLAY ERA APENAS BOX, AGORA É FLEXBOX PARA QUE EXISTA ESPAÇO PARA A IMAGEM*/
+    /* display: flexbox; */
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    margin: 2% 2.5% 35% 2.5%;
+}
+
+.teste{
+    width: 100%;
+    background-color: transparent;
+}
+
+.inputGroup{
+    width: 350px;
+    margin: 5% 0% 5% 0%;
+}
+
+.logLabel{
+    width: 100%;
+    font-weight: bolder;
+    display: block;
+    text-align: start;
+    margin: 2.5% 0% 2.5% 0%;
+}
+
+.logInput{
+    
+    width: 85%;
+    height: 40px;
+    display: block;
+    text-align: start;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+#IconeP{
+    margin-left: 5px;
+    background-color: lightskyblue;
+    border-radius: 15%;
+}
+
+.searchBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    margin: 1.25% 0% 1.25% 0%;
+    width: 35%;
+}
+
+
+
+.dataBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    margin: 0% 25% 0% 25%;
+    left: 0;
+    bottom: -5px;
+    background-color: rgba(231,223,255,1);
+    color: blue;
+    width: 50%;
+    border-radius: 10px;
+    height: 7.5%;
+    position: fixed;
+    border-image-width:1000%;
+}
+
+.dated{
+    color: blue;
+    font-size: x-large;
+    background-color: transparent;
+    text-align: left;
+    height: 100%;
+    width: 100%;
+}
+
+.emailed{
+    background: rgb(231,223,255) url(Icons/Icon_email2.png) no-repeat left;
+    padding-left: 15%;
+    background-size: 12.5%;
+    border-radius: 8px;
+    box-shadow: rgba(255,255,255,0) 0px 0px 0.5px 2px;
+}
+
+.emailed:hover, .emailed:focus{
+    color: white;
+    background: rgba(31, 9, 95, 0.658) url(Icons/Icon_email.png) no-repeat left;
+    padding-left: 15%;
+    background-size: 12.5%;
+    border-radius: 8px;
+    box-shadow: rgba(255,255,255,0.75) 0px 0px 0.5px 2px;
+}
+
+.passworded{
+    background: rgb(231,223,255) url(Icons/Icon_password2.png) no-repeat left;
+    padding-left: 15%;
+    background-size: 12.5%;
+    border-radius: 8px;
+    box-shadow: rgba(255,255,255,0) 0px 0px 0.5px 2px;
+}
+
+.passworded:hover, .passworded:focus{
+    color: white;
+    background: rgba(31, 9, 95, 0.658) url(Icons/Icon_password.png) no-repeat left;
+    padding-left: 15%;
+    background-size: 12.5%;
+    border-radius: 8px;
+    box-shadow: rgba(255,255,255,0.75) 0px 0px 0.5px 2px;
+}
+
+.apartamented{
+    background: rgb(231,223,255) url(Icons/Icon_apartament2.png) no-repeat left;
+    padding-left: 15%;
+    background-size: 12.5%;
+    border-radius: 8px;
+    box-shadow: rgba(255,255,255,0) 0px 0px 0.5px 2px;
+}
+
+.apartamented:hover, .apartamented:focus{
+    color: white;
+    background: rgba(31, 9, 95, 0.658) url(Icons/Icon_apartament.png) no-repeat left;
+    padding-left: 15%;
+    background-size: 12.5%;
+    border-radius: 8px;
+    box-shadow: rgba(255,255,255,0.75) 0px 0px 0.5px 2px;
+}
+
+.searched{
+    background: rgb(255, 255, 255);
+    padding-right: 1.66%;
+    background-size: 6.66%;
+    border-radius: 8px;
+    font-size: larger;
+    box-shadow: rgba(255,255,255,0) 0px 0px 0.5px 2px;
+    width: 100%;
+}
+
+.searched:hover, .searched:focus{
+    color: white;
+    padding-right: 1.66%;
+    background-color: lightskyblue;
+    background-size: 6.66%;
+    border-radius: 8px;
+    box-shadow: rgba(255,255,255,0.75) 0px 0px 0.5px 2px;
+}
+
+.submitBtn{
+    transition: all 0.5s;
+    background-color: rgb(231,223,255);
+    margin: 10% 0% 7% 0%;
+    width: 35%;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    color: blue;
+    box-shadow: rgba(255,255,255,0) 0px 0px 0.5px 2px;
+}
+
+.submitBtn:hover{
+    color: white;
+    background-color: rgba(31, 9, 95, 0.658);
+    font-weight: bold;
+    box-shadow: rgba(255,255,255,0.75) 0px 0px 2.5px 2.5px;
+}
+
+.upperBox{
+    margin: 5% 0% 5% 0%;
+    height: 175px;
+    width: 100%;
+    background-color: rgba(231,223,255,1);
+    border-radius: 8px;
+}
+
+.innerFirstBox{
+    margin: 0% 0% 1% 0%;
+    width: 100%;
+    height: 80%;
+    background-color: rgba(231,223,255,1);
+    box-shadow: rgba(0,0,0,0.25) 0px 5px 12.5px 0.25px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+}
+
+.innerSecondBox{
+    margin: 1.25% 0% 1% 0%;
+    width: 95%;
+    height: 80%;
+    background-color: transparent;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.roundedInner{
+    width: 100%;
+    height: 66.6%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(167,137,255,0.08);
+    box-shadow: inset rgba(0,0,0,0.25) 0px 5px 12.5px 0.05px;
+    border-radius: 10px;
+}
+
+.halfBox{
+    width: 100%;
+    height: 100%;
+    margin: 0% 1.25% 0% 1.25%;
+}
+
+.nm_aluno{
+    color: black;
+    background-color: transparent;
+    font-size: large;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.rm_aluno{
+    color: blue;
+    background-color: transparent;
+    font-size: large;
+    width: 95%;
+}
+
+.txtLabel2{
+    color: blue;
+    background-color: transparent;
+    width: 80%;
+}
+
+.hour{
+    font-size: x-large;
+    padding-left: 5%;
+    text-align: start;
+}
+
+.randomImg{
+    color: transparent;
+    background: transparent url(Icons/Icon_book2.png) no-repeat center;
+    background-size: 80%;
+    width: 20%;
+    height: 100%;
+}
+
+.randomImg2{
+    color: transparent;
+    background: transparent url(Icons/Icon_login2.png) no-repeat center;
+    background-size: 50%;
+    width: 25%;
+    height: 100%;
+}
+
+.randomImg3{
+    color: transparent;
+    background: transparent url(Icons/Icon_logout2.png) no-repeat center;
+    background-size: 50%;
+    width: 20%;
+    height: 100%;
+}
+
+.calendarImg{
+    color: transparent;
+    background: transparent url(Icons/Icon_calendar2.png) no-repeat center;
+    background-size: 56.6%;
+    width: 10%;
+    height: 100%;
+}
+
+.searchIcon{
+    
+    transition: all 0.5s;
+    border: none;
+    border-radius: 10px;
+    margin: 0% 1% 0% 1%;
+    background: rgb(255, 255, 255) url(Icons/Icon_search2.PNG) no-repeat center;
+    background-size: 50%;
+    width: 10%;
+    box-shadow: rgba(255,255,255,0) 0px 0px 0px 0px;
+}
+
+.searchIcon:hover{
+    border: none;
+    border-radius: 10px;
+    margin: 0% 1% 0% 1%;
+    background-color: lightskyblue url(Icons/Icon_search.PNG) no-repeat center;
+    background-size: 50%;
+    width: 10%;
+    box-shadow: rgba(255, 255, 255, 0.75) 0px 0px 0.5px 2px;
+}
+.botao_voltar{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    height: 40px;
+    margin-top: 210px;
+    border: solid 1px blue;
+    border-radius: 10px;
+    color: blue;
+    background-color: white;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+.botao_voltar img{
+    width: 100%
+}
+.selectList{
+    color: blue;
+    transition: all 0.5s;
+    border: none;
+    border-radius: 5px;
+    margin: 0% 1% 0% 1%;
+    background: rgb(255, 255, 255) url(Icons/Icon_filter2.PNG) no-repeat left;
+    padding-left: 1.25%;
+    background-size: 5%;
+    width: 25%;
+    height: 25px;
+    box-shadow: rgba(255,255,255,0) 0px 0px 0px 0px;
+}
+
+.selectList:focus{
+    color: rgb(0, 0, 0);
+    border-radius: 0px;
+    background-color: lightskyblue url(Icons/Icon_filter.png) no-repeat left;
+    background-size: 5%;
+    box-shadow: rgba(255,255,255,0.75) 0px 0px 0.5px 2px;
+}
+
+
+
+
+.customLink{
+    color: rgb(135, 167, 255);
+    text-decoration: none;
+}
+
+.error{
+    color: red;
+}
+.errorInput{
+    box-shadow: rgba(255,0,0,1) 0px 0px 1px 2.5px;
+    background: rgb(255,170,195) url(Icons/Icon_password2.png) no-repeat left;
+    padding-left: 15%;
+    background-size: 12.5%;
+    border-radius: 8px;
+}
+
+.botao_voltar {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 9999; /* Certifica-se de que o botão de voltar esteja sempre acima de outros elementos */
+}
+.botao_voltar:hover{
+    background-color: lightblue;
+}
+input[type="search"]::-webkit-search-cancel-button{
+    transition: all 0.25s;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    background: rgba(128, 128, 128, 0.5) url(Icons/Icon_Clear.png) no-repeat center;
+    border-radius: 40%;
+    background-size: 80% 80%;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator{
+    -webkit-appearance: none;
+    background: transparent url(Icons/Icon_upArrow2.png) no-repeat center;
+    background-size: 50%;
+    width: 10%;
+    height: 100px;
+    padding-right: 0%;
+}
+
+.BotaoCalendario {
+
+background-color: transparent;
+
+}
