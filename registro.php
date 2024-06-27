@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styleMirros.css">
     <!-- <script src="registro.js" type="text/Javascript"></script> -->
     <title>Registro-StudentPass</title>
+    <link rel="icon" type="image/png" href="StudentPass-grande.png">
     <style>
         .searchIcon {
             position: absolute;
